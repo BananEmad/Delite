@@ -8,6 +8,6 @@ public class SignU extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_u);
+      // setContentView(R.layout.activity_sign_u);
     }
 }
