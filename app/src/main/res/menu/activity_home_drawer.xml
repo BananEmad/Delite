@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@android:color/white"
+            android:title="Home" />
+
+
+        <item
+            android:id="@+id/nav_favourit"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Favourit" />
+        </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rateus"
+            android:icon="@drawable/ic_rate"
+            android:iconTint="@android:color/white"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_information"
+            android:iconTint="@android:color/white"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:iconTint="@android:color/white"
+            android:title="Help" />
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:iconTint="@android:color/white"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@android:color/white"
+            android:title="Log out" />
+
+      </group>
+</menu>
