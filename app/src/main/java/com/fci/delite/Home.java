@@ -1,6 +1,9 @@
 package com.fci.delite;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -13,6 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static android.R.attr.typeface;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -20,8 +25,32 @@ public class Home extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        BottomNavigationView  mNavigationView=(BottomNavigationView)findViewById(R.id.BottomNavigationView);
+        mNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId()==R.id.menuItem)
+                {
+
+                }else if (item.getItemId()==R.id.orderItem)
+                {
+
+                }else if(item.getItemId()==R.id.offersItem)
+                {
+
+                }else if(item.getItemId()==R.id.paymentItem)
+                {
+
+                }else if(item.getItemId()==R.id.homeItem) {
+
+                }
+
+                return false;
+            }
+        });
        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Home");
+        toolbar.setTitle("Delite");
+        Typeface face=Typeface.createFromAsset(getAssets(),"fonts/PetitFormalScript-Regular.ttf");
         setSupportActionBar(toolbar);
 
 
@@ -92,5 +121,6 @@ public class Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+
+        }
 

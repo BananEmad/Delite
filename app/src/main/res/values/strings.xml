@@ -5,6 +5,11 @@
     <string name="title_activity_logo_">Logo_Activity</string>
     <string name="title_activity_home">Home</string>
 
+    <string name="Order">Order</string>
+    <string name="Offers">Offers</string>
+    <string name="Payment">Payment</string>
+    <string name="Menu">Menu</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
